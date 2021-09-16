@@ -1,0 +1,29 @@
+
+### Hello World Route
+GET http://localhost:3000/hello
+
+### get all tasks
+GET http://localhost:3000/tasks
+
+### get single task
+GET http://localhost:3000/tasks/1
+
+### create a task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title": "some new title"
+}
+
+### delete a task
+DELETE http://localhost:3000/tasks/1
+
+### update a task
+PUT http://localhost:3000/tasks/2
+Content-Type: application/json
+
+{
+    "done": true,
+    "title": "new title!"
+}
